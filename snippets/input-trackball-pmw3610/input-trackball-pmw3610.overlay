@@ -9,6 +9,24 @@
         codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
         track-remainders;
     };
+
+    pmw3610_scroll_inertia: pmw3610_scroll_inertia {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+
+        /* axis = 0: both axes, matching the free vertical/horizontal
+         * scroll already produced by zip_xy_to_scroll_mapper below. */
+        axis = <0>;
+        layer = <4>;
+
+        /* Must match the &pmw3610_scroll_scaler args downstream. */
+        scale = <1>;
+        scale-div = <2>;
+
+        /* Lowered from the default (7) to match our small scale/scale-div
+         * ratio: output frequency at cutoff = stop * scale * 125 / scale-div. */
+        stop = <1>;
+    };
 };
 
 &spi0 {
@@ -43,6 +61,7 @@
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_to_scroll_mapper>,
+            <&pmw3610_scroll_inertia>,
             <&pmw3610_scroll_scaler 1 2>;
         process-next;
     };
