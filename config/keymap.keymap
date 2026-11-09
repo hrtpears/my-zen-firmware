@@ -15,24 +15,33 @@
         };
     };
 
+    macros {
+        m_wclick: m_wclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK &mkp LCLK>;
+            label = "M_WCLICK";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&kp TAB    &kp Q       &kp W             &kp E     &kp R             &kp T  &kp Y      &kp U      &kp I  &kp O           &kp P           &kp BSPC
-&mo 5      &kp A       &kp S             &kp D     &kp F             &kp G  &kp H      &kp J      &kp K  &kp L           &kp MINUS       &kp ENTER
-&kp LSHFT  &kp Z       &kp X             &kp C     &kp V             &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M           &kp COMMA       &kp DOT          &kp UP_ARROW  &mt RSHFT QUESTION
-&mo 2      &kp ESCAPE  &kp LEFT_CONTROL  &kp LALT  &kp LEFT_COMMAND  &mo 2  &kp SPACE  &kp SPACE  &mo 3  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp TAB        &kp Q         &kp W         &kp E  &kp R  &kp T  &kp Y  &kp U          &kp I  &kp O      &kp P          &kp DELETE
+&kp LA(GRAVE)  &kp A         &kp S         &kp D  &kp F  &kp G  &kp H  &kp J          &kp K  &kp L      &kp SEMICOLON  &kp MINUS
+&kp LSHFT      &kp Z         &kp X         &kp C  &kp V  &kp B  &none  &kp ENTER      &kp N  &kp M      &kp COMMA      &kp DOT        &kp SLASH  &kp EQUAL
+&kp LCTRL      &kp LEFT_GUI  &kp LEFT_ALT  &none  &mo 3  &mo 1  &mo 2  &kp BACKSPACE  &none  &kp GRAVE  &kp SQT        &kp BACKSLASH
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &mkp LCLK  &mo 4             &mkp RCLK  &trans                 &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp RG(LEFT_BRACKET)  &mkp MB1   &mkp MB3          &mkp MB2   &kp RG(RIGHT_BRACKET)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &kp LC(UP_ARROW)  &trans     &trans                 &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans     &trans            &trans     &trans                 &trans
+&trans     &kp LC(Q)  &trans     &kp LG(E)  &kp LC(R)  &kp LC(T)  &kp C_AC_HOME  &kp PAGE_UP     &kp UP_ARROW      &kp END          &kp PRINTSCREEN  &trans
+&m_wclick  &kp LC(A)  &kp LC(S)  &trans     &kp LC(F)  &kp LC(G)  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &mkp MB4         &mkp MB5
+&mkp LCLK  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans         &kp SPACE       &kp LC(UP_ARROW)  &kp LA(PG_UP)    &trans           &kp LA(PAGE_DOWN)  &trans  &trans
+&mkp RCLK  &trans     &trans     &trans     &trans     &trans     &trans         &kp LCTRL       &trans            &trans           &trans           &trans
             >;
         };
 
