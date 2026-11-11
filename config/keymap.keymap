@@ -36,7 +36,7 @@
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
         };
     };
 
