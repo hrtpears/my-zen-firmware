@@ -63,7 +63,7 @@
 
         layer_2 {
             bindings = <
-&kp ESCAPE  &kp LC(Q)  &trans     &kp LG(E)  &kp LC(R)  &kp LC(T)  &kp C_AC_HOME  &kp PAGE_UP     &kp UP_ARROW    &kp END          &kp PRINTSCREEN  &kp DELETE
+&kp ESCAPE  &kp LC(Q)  &trans     &kp LG(E)  &kp LC(R)  &kp LC(T)  &kp HOME       &kp PAGE_UP     &kp UP_ARROW    &kp END          &kp PRINTSCREEN  &kp DELETE
 &m_wclick   &kp LC(A)  &kp LC(S)  &trans     &kp LC(F)  &kp LC(G)  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mkp MB4         &mkp MB5
 &mkp LCLK   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans         &kp RCTRL       &kp END         &kp LA(PG_UP)    &trans           &kp LA(PAGE_DOWN)  &trans  &kp RIGHT_SHIFT
 &mkp RCLK   &trans     &trans     &trans     &trans     &trans     &trans         &kp SPACE       &trans          &trans           &trans           &kp RCTRL
