@@ -45,7 +45,7 @@
 
         layer_0 {
             bindings = <
-&kp TAB        &kp Q         &kp W         &kp E  &kp R  &kp T  &kp Y  &kp U      &kp I          &kp O      &kp P          &BS_DEL
+&kp TAB        &kp Q         &kp W         &kp E  &kp R  &kp T  &kp Y  &kp U      &kp I          &kp O      &kp P          &kp BACKSPACE
 &kp LA(GRAVE)  &kp A         &kp S         &kp D  &kp F  &kp G  &kp H  &kp J      &kp K          &kp L      &kp SEMICOLON  &kp MINUS
 &kp LSHFT      &kp Z         &kp X         &kp C  &kp V  &kp B  &none  &kp SPACE  &kp N          &kp M      &kp COMMA      &kp DOT        &kp SLASH  &kp EQUAL
 &kp LCTRL      &kp LEFT_GUI  &kp LEFT_ALT  &none  &mo 4  &mo 2  &mo 3  &kp ENTER  &kp BACKSPACE  &kp GRAVE  &kp SQT        &kp BACKSLASH
@@ -63,16 +63,16 @@
 
         layer_2 {
             bindings = <
-&kp ESCAPE  &kp LC(Q)  &trans     &kp LG(E)  &kp LC(R)  &kp LC(T)  &kp C_AC_HOME  &kp PAGE_UP     &kp UP_ARROW    &kp END          &kp PRINTSCREEN  &BS_DEL
+&kp ESCAPE  &kp LC(Q)  &trans     &kp LG(E)  &kp LC(R)  &kp LC(T)  &kp C_AC_HOME  &kp PAGE_UP     &kp UP_ARROW    &kp END          &kp PRINTSCREEN  &kp DELETE
 &m_wclick   &kp LC(A)  &kp LC(S)  &trans     &kp LC(F)  &kp LC(G)  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mkp MB4         &mkp MB5
-&mkp LCLK   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans         &kp RCTRL       &kp END         &kp LA(PG_UP)    &trans           &kp LA(PAGE_DOWN)  &trans  &trans
-&mkp RCLK   &trans     &trans     &trans     &trans     &trans     &trans         &kp SPACE       &trans          &trans           &trans           &trans
+&mkp LCLK   &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans         &kp RCTRL       &kp END         &kp LA(PG_UP)    &trans           &kp LA(PAGE_DOWN)  &trans  &kp RIGHT_SHIFT
+&mkp RCLK   &trans     &trans     &trans     &trans     &trans     &trans         &kp SPACE       &trans          &trans           &trans           &kp RCTRL
             >;
         };
 
         layer_3 {
             bindings = <
-&kp ESCAPE  &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(NUMBER_9)      &kp LS(NUMBER_0)       &none   &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none             &BS_DEL
+&kp ESCAPE  &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(NUMBER_9)      &kp LS(NUMBER_0)       &none   &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none             &kp DELETE
 &trans      &kp GRAVE      &kp SQT         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(NUMBER_8)  &trans
 &trans      &kp LS(GRAVE)  &kp LS(SQT)     &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none   &none   &none         &kp DOT       &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp SLASH  &trans
 &trans      &trans         &trans          &trans                &trans                 &trans  &trans  &kp NUMBER_0  &none         &none         &none             &none
@@ -81,9 +81,9 @@
 
         layer_4 {
             bindings = <
-&trans  &kp LS(LG(RIGHT))  &kp LC(LEFT_ALT)  &none  &none  &none  &none  &kp F7   &kp F9  &kp F9  &kp F10  &BS_DEL
+&trans  &kp LS(LG(RIGHT))  &kp LC(LEFT_ALT)  &none  &none  &none  &none  &kp F7   &kp F9  &kp F9  &kp F10  &kp DELETE
 &mo 5   &none              &none             &none  &none  &none  &none  &kp F4   &kp F5  &kp F6  &kp F11  &none
-&trans  &none              &none             &none  &none  &none  &none  &none    &none   &kp F1  &kp F2   &kp F3   &kp F12  &none
+&trans  &none              &none             &none  &none  &none  &none  &none    &none   &kp F1  &kp F2   &kp F3      &kp F12  &none
 &trans  &none              &none             &none  &none  &none  &none  &kp TAB  &none   &none   &none    &none
             >;
         };
