@@ -9,7 +9,7 @@
 
         bt_clear {
             bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
+            key-positions = <29 28>;
         };
     };
 
@@ -74,7 +74,7 @@
             bindings = <
 &kp ESCAPE  &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(NUMBER_9)      &kp LS(NUMBER_0)       &none   &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none             &kp DELETE
 &trans      &kp GRAVE      &kp SQT         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(NUMBER_8)  &trans
-&trans      &kp LS(GRAVE)  &kp LS(SQT)     &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none   &none   &none         &kp DOT       &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp SLASH  &trans
+&trans      &kp LS(GRAVE)  &kp LS(SQT)     &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none   &none   &kp DOT       &kp DOT       &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp SLASH  &trans
 &trans      &trans         &trans          &trans                &trans                 &trans  &trans  &kp NUMBER_0  &none         &none         &none             &none
             >;
         };
